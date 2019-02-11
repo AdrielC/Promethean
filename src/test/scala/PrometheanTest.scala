@@ -423,7 +423,7 @@ class PrometheanTest extends FunSpec {
         case e: Exception => throw e
       }
 
-      assert(message.toString.contains("Could not construct class com.overstock.collections.TestProductResult given the following input args:"))
+      assert(message.toString.contains("Could not construct class TestProductResult given the following input args:"))
     }
   }
 }
