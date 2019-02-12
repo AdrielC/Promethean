@@ -113,17 +113,17 @@ val laytonRecord = PhoneBookRecord(name = "Layton", phoneNumber = 5555555555, ad
 
 val personFromRecord = laytonRecord.hardenAs[Person].autocatalyze
 // personFromRecord: Person = Person(name = "Layton", 
-                                     age = -1, 
-                                     address = "6 Columbia Lane", 
-                                     phoneNumber = 5555555555, 
-                                     hasPhone = true)
+//                                   age = -1, 
+//                                   address = "6 Columbia Lane", 
+//                                   phoneNumber = 5555555555, 
+//                                   hasPhone = true)
                                      
 val fullPersonFromRecord = personFromRecord.absorb(layton)
 // fullPersonFromRecord: Person = Person(name = "Layton", 
-                                         age = 23, 
-                                         address = "6 Columbia Lane", 
-                                         phoneNumber = 5555555555, 
-                                         hasPhone = true)
+//                                       age = 23, 
+//                                       address = "6 Columbia Lane", 
+//                                       phoneNumber = 5555555555, 
+//                                       hasPhone = true)
 
 ```
 
