@@ -99,7 +99,7 @@ the Promethean method `autocatalyze`.
 case class Person(name: String, age: Int -1, address: String = "", phoneNumber = -1, hasPhone: Boolean = false) extends Promethean[Person] {
   def identifyingFields = Seq(field("name"))
   def reactiveFields = Seq(
-    AbsorbReaction(field = field("hasPhone"), precipitate = a => true, trigger = a => a.isInstanceOf[PhoneBookRecord])
+    AbsorbReaction(field = field("hasPhone"), precipitate = a => true, trigger = a => a.isInstanceOf[PhoneBookRecord]),
     AutoReaction(field = field("hasPhone"), precipitate = true, trigger = !clayFields.contains("phoneNumber"))
   )
 }
