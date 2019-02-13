@@ -21,7 +21,7 @@ case class PhoneBookRecord(name: String, phoneNumber: Int, address: String) exte
 ```
 
 Let's say we don't know Layton's address when we instantiate his `Person` class.
-We can omit his name since we defined the default to be a blank string
+We can omit his address since we defined the default to be a blank string
 
 ```scala
 
