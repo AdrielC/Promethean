@@ -2,7 +2,7 @@
 **Promethean** is a type class based generic programming library using Scala's reflection API
 The primary uses for this library are data consolidation between conceptually similar case classes and for data validation.
 
-# Using Promethean
+## Using Promethean
 Promethean is an abstract class that can be extended by any case class to enrich it with generic programming methods. 
 Any case class that extends Promethean must define the `identifyingFields` method, which is the method used by Promethean
 to determine equatability between Promethean classes.
